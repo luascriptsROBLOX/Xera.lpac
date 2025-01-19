@@ -1,4 +1,4 @@
-local devices = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/hello-n-bye/starry/main/src/device.lua", true))()
+local devices = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/luascriptsROBLOX/Xera.lpac/refs/heads/main/Src/MtDevicd.check", true))()
 local flu = loadstring(game:HttpGetAsync("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local placeid = game.PlaceId
@@ -35,7 +35,7 @@ end
 else
     flu:Notify({
         Title = "❌  Join a Supported Game.",
-        Content = "Please join either Break In 2 or Tower of Hell.",
+        Content = "Please join BladeBall",
         Duration = 5
     })
 end
