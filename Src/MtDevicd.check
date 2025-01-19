@@ -1,6 +1,6 @@
 
 local endpoint = "https://httpbin.org/user-agent"
-local api = loadstring(game:HttpGetAsync("", true))()
+local api = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/luascriptsROBLOX/Xera.lpac/refs/heads/main/Src/Api.lua", true))()
 
 local http = game:GetService("HttpService")
 
