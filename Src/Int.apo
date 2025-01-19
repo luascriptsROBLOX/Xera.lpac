@@ -1,0 +1,41 @@
+local devices = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/hello-n-bye/starry/main/src/device.lua", true))()
+local flu = loadstring(game:HttpGetAsync("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local placeid = game.PlaceId
+
+local function isMobile()
+    if (devices) == "Windows" or (string.find(devices, "Krampus")) then
+        return "pc"
+    else
+        if (string.find(identifyexecutor(), "Solara")) or (string.find(identifyexecutor(), "Wave")) or (string.find(identifyexecutor(), "incognito")) then
+            return "pc"
+        else
+            if (string.find(string.lower(identifyexecutor()), "macsploit")) then
+                return "pc"
+            else
+                return "mobile"
+            end
+        end
+    end
+end
+
+local function removeLoadingInterface()
+    if game.CoreGui:FindFirstChild("Starry Loading") then
+        game.CoreGui["Starry Loading"]:Destroy()
+    else
+        return
+    end
+
+    print("Destroyed loading interface.")
+end
+
+    if (placeid) == 13772394625 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luascriptsROBLOX/BladeBallXera/main/XeraUltron"))()
+        removeLoadingInterface()
+else
+    flu:Notify({
+        Title = "❌  Join a Supported Game.",
+        Content = "Please join either Break In 2 or Tower of Hell.",
+        Duration = 5
+    })
+end
