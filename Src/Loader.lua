@@ -7,7 +7,7 @@ flu:Notify({
 })
 
 local succ, err = xpcall(function()
-    loadstring(game:HttpGetAsync(".....", true))()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/luascriptsROBLOX/Xera.lpac/refs/heads/main/Src/Int.apo", true))()
 
     print("Loaded with 0 issues.")
 end, function(err)
